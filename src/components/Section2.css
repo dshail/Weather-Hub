@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+#section2 {
+    background-image: url("/bg-img-2.jpg");
+    height: 830px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Poppins', Arial, Sans-Serif;
+    gap: 25px;
+    background-position: center center;
+}
+
+#section2 h1 {
+    font-size: 30px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#sec-2-loc {
+    margin-bottom: -10px;
+}
+
+.curr-loc-data {
+    border: 3px solid rgb(22, 131, 239, 0.5);
+    height: 550px;
+    width: 50%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.h1-sec2 {
+    margin: 0px auto;
+}
+
+.loc-input {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.loc-input input {
+    width: 500px;
+    padding: 7px 10px;
+    font-size: 17px;
+    border: 1px solid rgba(22, 131, 239, 0.5);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.loc-input input:focus {
+    border-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.loc-input button {
+    width: 70px;
+    color: rgb(255, 251, 251);
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.loc-input button:hover {
+    background: linear-gradient(45deg, #00a6e0, #005aac);
+}
+
+.errMsg {
+    color: rgb(255, 0, 0);
+    font-size: 16px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+}
+
+.weatherCond-sec2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+#weather-img {
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.errMsg button {
+    background-color: transparent;
+    padding: 0px 2px;
+    margin-left: 10px;
+    margin-right: 3px;
+    color: red;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.errMsg button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(133, 90, 38);
+}
+
+@media only screen and (max-width: 1000px) {
+    .curr-loc-data {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .curr-loc-data {
+        width: 80%;
+    }
+    .loc-input input {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .loc-input input {
+        width: 200px;
+    }
+    #section2 h1 {
+        font-size: 24px;
+    }
+    .curr-loc-data {
+        height: 500px;
+    }
+    #section2 {
+        height: 780px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #section2 {
+        height: 670px;
+    }
+    #section2 h1 {
+        font-size: 20px;
+    }
+    .curr-loc-data {
+        height: 450px;
+        padding: 15px;
+    }
+    #weather-img {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+#bg-1 {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    height: 700px;
+    animation: bgAnimation 10s infinite alternate;
+}
+
+#section1 {
+    height: 600px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+    gap: 8px;
+    color: rgb(252, 251, 251);
+    font-family: 'Poppins', Arial, Sans-Serif;
+    position: relative;
+    bottom: -160px; /* Adjust this value to move the text down */
+}
+
+.section1 h1 {
+    font-size: 40px; /* Increase text size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    animation: textAnimation 3s ease-in-out infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.images-sec1 {
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-svg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.img-svg img {
+    height: 48px;
+    width: 48px;
+}
+
+@keyframes bgAnimation {
+    0% { filter: brightness(100%); }
+    100% { filter: brightness(80%); }
+}
+
+@keyframes textAnimation {
+    0%, 100% { opacity: 1; transform: translateY(0); }
+    50% { opacity: 0.5; transform: translateY(-20px); }
+}
+
+@media only screen and (max-width: 775px) {
+    #section1 h1 {
+        font-size: 35px; /* Increase text size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #section1 h1 {
+        font-size: 35px; /* Increase text size for smaller screens */
+    }
+    .section1 {
+        margin-left: 10px;
+    }
+    #bg-1 {
+        height: 500px;
+    }
+    #section1 {
+        height: 370px;
+    }
+    .section1 {
+        height: 50%;
+        margin-top: 30px;
+    }
+    .images-sec1 {
+        margin-top: auto;
+        margin-bottom: 30px;
+        align-items: end;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #section1 h1 {
+        font-size: 35px; /* Increase text size for smaller screens */
+        display: flex;
+        flex-direction: column;
+    }
+    .section1 {
+        margin-left: 5px;
+    }
+    .img-svg img {
+        height: 30px;
+        width: 30px;
+    }
+    .img-svg svg {
+        height: 30px;
+        width: 30px;
+    }
+}
